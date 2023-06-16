@@ -1,0 +1,62 @@
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /*   skew adds a 4.76 degree slope and the translateY equation is based on the fact that a 4.76 degree slope has a gradient of 1:12 */
+    -webkit-transform: skew(0, -4.76deg) translateY(calc(50vw / -12));
+    -ms-transform: skew(0, -4.76deg) translateY(calc(50vw / -12));
+    transform: skew(0, -4.76deg) translateY(calc(50vw / -12));
+    /*   And finally we account for the slope to make sure each section can occupy the full window... I added 10vw just to give it a little extra padding */
+    min-height: calc(100vh - (110vw / -12));
+    background-color: #2B4141;
+}
+
+/*BODY BOUTIQUE*/
+
+.containerDirRow {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.containerImgrPrezBoutique {
+    width: 30%;
+    height: auto;
+}
+
+.imgrPrezBoutique {
+    width: 100%;
+    transform: translateY(-15vh);
+    margin-left: 10vw;
+    z-index: 50;
+    -webkit-transform: skew(0, 4.76deg) translateY(calc(50vw / 12));
+    -ms-transform: skew(0, 4.76deg) translateY(calc(50vw / 12));
+    transform: skew(0, 4.76deg) translateY(calc(-40vw / 12));
+}
+
+
+.blocTxtAcceuilBoutique {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 55%;
+    height: auto;
+    padding-left: 4vw;
+    padding-top: 6vw;
+    -webkit-transform: skew(0, 4.76deg) translateY(calc(50vw / 12));
+    -ms-transform: skew(0, 4.76deg) translateY(calc(50vw / 12));
+    transform: skew(0, 4.76deg) translateY(calc(50vw / 12));
+    margin-top: calc(50vw / -12);
+}
+
+.blocTxtAcceuilBoutique h1 {
+    font-size: xxx-large;
+    color: #97B1A6;
+}
+
+.blocTxtAcceuilBoutique p {
+    width: 60%;
+    color: var(--txt-color-clair);
+}

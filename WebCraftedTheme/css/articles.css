@@ -1,0 +1,270 @@
+.sliderArticle {
+    transform: translateY(-5vh);
+}
+
+.containerPageArticleAll {
+    transform: translateY(-15vh);
+}
+
+.containerCategories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    min-height: 40vh;
+    transform: translateY(25vh);
+    border-radius: 30px;
+    background-color: #637B75;
+}
+
+.categories ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vh;
+    z-index: 5000;
+}
+
+.categories ul li {
+    list-style-type: none;
+    text-decoration: none;
+    background-color: white;
+    padding: 1vw;
+    margin: 1vw;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-weight: 500;
+    color: #02ab6c;
+}
+
+.categories ul li:hover {
+    background-color: #02ab6c;
+    color: white;
+}
+
+.fullpage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    margin-top: 20vh;
+    /*   skew adds a 4.76 degree slope and the translateY equation is based on the fact that a 4.76 degree slope has a gradient of 1:12 */
+    -webkit-transform: skew(0, -4.76deg) translateY(calc(50vw / -12));
+    -ms-transform: skew(0, -4.76deg) translateY(calc(50vw / -12));
+    transform: skew(0, -4.76deg) translateY(calc(50vw / -12));
+    /*   And finally we account for the slope to make sure each section can occupy the full window... I added 10vw just to give it a little extra padding */
+    min-height: calc(100vh - (110vw / -12));
+    background-color: #2B4141;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 30px;
+    -webkit-transform: skew(0, 4.76deg) translateY(calc(50vw / 12));
+    -ms-transform: skew(0, 4.76deg) translateY(calc(50vw / 12));
+    transform: skew(0, 4.76deg) translateY(calc(-40vw / 12));
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+}
+
+@media (min-width: 1500px) {
+    .grid-container {
+        grid-template-columns: repeat(4, minmax(300px, 1fr));
+    }
+}
+
+
+/* Style pour les articles */
+.post {
+    position: relative;
+    background:linear-gradient(135deg, #84A19F 0%, #394955 100%);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,
+    100%, 0.075),
+        /* shadow ring 👇 */
+    0 0 0 1px hsla(0, 0%, 0%, 0.05),
+        /* multiple soft shadows 👇 */
+    0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
+    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+    transition: transform 0.3s ease;
+}
+
+.post:hover {
+    transform: rotateY(10deg);
+    background-color: #F5F5F5;
+}
+
+.post h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #f0eee4;
+}
+
+.post__meta {
+    color: #f0eee4;
+    margin-bottom: 10px;
+}
+
+.lireSuiteContainer{
+    width: 100%;
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.post__link {
+    color: white;
+    background-color: #7A989C;
+    font-weight:350;
+    font-family: Poppins;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    /* inner glow 👇 */
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,
+    100%, 0.075),
+        /* shadow ring 👇 */ 0 0 0 1px hsla(0, 0%, 0%, 0.05),
+        /* multiple soft shadows 👇 */ 0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
+    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+}
+
+.post__link:hover {
+    color: white;
+    background: #84A19F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #394955, #84A19F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #394955, #84A19F);
+    /*font-weight:normal;*/
+    /*font-family: Poppins;*/
+    /*background-color: #97B1A6;*/
+    /*padding: 10px;*/
+    /*text-decoration: none;*/
+    /*border-radius: 5px;*/
+}
+
+
+/* Style pour les images */
+.imgPrezArticle {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.imgPrezArticle img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.imgPrezArticle:hover img {
+    transform: scale(1.1);
+}
+
+.containerNavArticle {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7vh;
+    margin-bottom: 2vh;
+    -webkit-transform: skew(0, 4.76deg) translateY(calc(50vw / 12));
+    -ms-transform: skew(0, 4.76deg) translateY(calc(50vw / 12));
+    transform: skew(0, 4.76deg) translateY(calc(-40vw / 12));
+}
+
+.site__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site__navigation__prev a {
+    text-decoration: none;
+    color: white;
+    background-color: #7A989C;
+    padding: 1vw;
+    margin: 1vw;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-weight: 350;
+    /* inner glow 👇 */
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,
+    100%, 0.075),
+        /* shadow ring 👇 */ 0 0 0 1px hsla(0, 0%, 0%, 0.05),
+        /* multiple soft shadows 👇 */ 0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
+    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+}
+
+.site__navigation__next a {
+    text-decoration: none;
+    color: white;
+    background-color: #7A989C;
+    padding: 1vw;
+    margin: 1vw;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-weight: 350;
+    /* inner glow 👇 */
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,
+    100%, 0.075),
+        /* shadow ring 👇 */ 0 0 0 1px hsla(0, 0%, 0%, 0.05),
+        /* multiple soft shadows 👇 */ 0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
+    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+}
+
+.site__navigation__next a:hover {
+    text-decoration: none;
+    color: white;
+    background: #84A19F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #394955, #84A19F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #394955, #84A19F);
+    padding: 1vw;
+    margin: 1vw;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-weight: 350;
+    /* inner glow 👇 */
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,
+    100%, 0.075),
+        /* shadow ring 👇 */ 0 0 0 1px hsla(0, 0%, 0%, 0.05),
+        /* multiple soft shadows 👇 */ 0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
+    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+}
+
+.site__navigation__prev a:hover {
+    text-decoration: none;
+    color: white;
+    background: #84A19F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #394955, #84A19F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #394955, #84A19F);
+    padding: 1vw;
+    margin: 1vw;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-weight: 350;
+    /* inner glow 👇 */
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,
+    100%, 0.075),
+        /* shadow ring 👇 */ 0 0 0 1px hsla(0, 0%, 0%, 0.05),
+        /* multiple soft shadows 👇 */ 0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
+    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+}

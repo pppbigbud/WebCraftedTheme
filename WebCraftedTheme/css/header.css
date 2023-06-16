@@ -1,0 +1,55 @@
+/*HEADER*/
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+}
+
+.containerLogo {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    height: auto;
+}
+
+.logoHeader {
+    width: 100%;
+    height: auto;
+}
+
+.containerPanier {
+    position: relative;
+    top: -5vh;
+    display: flex;
+    justify-content: flex-start;
+    width: 20%;
+    height: auto;
+}
+
+.containerPanier .btnPanier {
+    width: auto;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: #ffffff;
+    transform: skew(-5deg, -5deg);
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.containerPanier .btnPanier .logoCart {
+    transform: skew(5deg, 5deg);
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.containerPanier .btnPanier p {
+    transform: skew(5deg, 5deg);
+    margin-top: 50px;
+    margin-right: 50px;
+}

@@ -1,0 +1,20 @@
+.adresseHomePage{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: xxx-large;
+    color: var(--txt-color-clair);
+    margin-top: 20vh;
+}
+
+.adresseHomePage h3{
+    margin-bottom: 5vh;
+}
+
+.adresseHomePage iframe{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}

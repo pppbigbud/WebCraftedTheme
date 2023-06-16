@@ -1,0 +1,53 @@
+.blocCMD {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-transform: skew(0, 4.76deg) translateY(calc(50vw / 12));
+    -ms-transform: skew(0, 4.76deg) translateY(calc(50vw / 12));
+    transform: skew(0, 4.76deg) translateY(calc(90vw / 12));
+}
+
+.blocCMD h1 {
+    font-size: xxx-large;
+    color: #97B1A6;
+    display: flex;
+    transform: translateY(-10vh);
+}
+
+.blocShapeOrder {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.shapeWhiteOrder {
+    position: relative;
+    /* Autres styles de la div */
+}
+
+.shapeWhiteOrder p {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-47%, -50%);
+}
+
+.shapeWhiteOrder h3 {
+    position: absolute;
+    top: 24%;
+    left: 30%;
+    transform: translate(-50%, -40%);
+}
+
+.imgOrigamiPreparation {
+    position: absolute;
+    top: 17%;
+    left: 81%;
+    transform: translate(-50%, -40%);
+}
+
