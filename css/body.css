@@ -9,8 +9,8 @@
 /*Background gradient color*/
 
 body {
-    background: rgb(26, 173, 232);
-    background: linear-gradient(251deg, rgba(105,137,150,1) 0%, rgba(151,177,166,1) 100%);
+    background: rgb(179, 39, 174);
+    background: linear-gradient(251deg, rgb(143, 105, 150) 0%, rgb(173, 151, 177) 100%);
     overflow-x : hidden;
 }
 
