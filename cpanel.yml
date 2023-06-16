@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/ycvn0392/reveriesetpetitsplis.fr/wp-content/themes/WebCraftedTheme
+    - /bin/cp -R * $DEPLOYPATH
