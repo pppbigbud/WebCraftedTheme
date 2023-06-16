@@ -1,0 +1,32 @@
+/*On enleve les bordure auto*/
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Background gradient color*/
+
+body {
+    background: rgb(105,137,150);
+    background: linear-gradient(251deg, rgba(105,137,150,1) 0%, rgba(151,177,166,1) 100%);
+    overflow-x : hidden;
+}
+
+/*Variable couleurs Tailles et Couleurs*/
+
+:root{
+    --txt-color-clair: #F5F5F5;
+}
+
+p, h1, h2, h3, h4, span{
+    font-family: 'Poppins', sans-serif;
+}
+
+.titreHome{
+    font-weight: bold;
+}
+
+
+

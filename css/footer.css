@@ -1,0 +1,87 @@
+.containerFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 10vh;
+    background-color: #2B4141;
+}
+
+.blocFooter{
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blocFooter h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    font-weight: normal;
+    color: #B1C2C4;
+    margin: 0.5em;
+}
+
+.blocFooter .reseauxFooter{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.blocFooter ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.blocFooter ul li img{
+    width: 70%;
+    height: auto;
+}
+
+.blocFooter .adresseFooter{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+    font-family: Poppins;
+    color: #B1C2C4;
+}
+
+.blocFooter .contactFooter{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+    font-family: Poppins;
+    color: #B1C2C4;
+}
+
+.containerCGV{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B4141;
+}
+
+.linkMentionsLegales, .linkCGV {
+    font-family: Poppins;
+    color: #B1C2C4;
+    list-style-type: none;
+    text-decoration:none;
+    margin-top: 1rem;
+}
